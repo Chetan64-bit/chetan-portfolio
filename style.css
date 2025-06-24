@@ -1,0 +1,300 @@
+/* Basic Styles */
+body {
+  font-family: 'Fira Code', monospace;
+  margin: 0;
+  padding: 0;
+  background-color: #0d1117;
+  color: #ffffff;
+  background-image: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+  background: #0d1117;
+  color: #00ff88;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  border-bottom: 1px solid #00ff88;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #00ff88;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #00ff88;
+  color: #0d1117;
+  transform: scale(1.1);
+}
+
+/* Sections */
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* Home */
+.about-image {
+  width: 300px;
+  border-radius: 8px;
+  margin-top: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.about-image:hover {
+  transform: scale(1.05);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #00ff88;
+  color: #0d1117;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background-color: #00e676;
+}
+
+.btn-secondary {
+  background-color: #00e676;
+}
+
+/* Skills Section */
+.skills {
+  margin-bottom: 1.5rem;
+}
+
+.progress-bar {
+  background: #222;
+  border-radius: 25px;
+  height: 15px;
+  width: 80%;
+  margin: 0.5rem auto;
+  overflow: hidden;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.progress {
+  background: linear-gradient(90deg, #00ff88, #00e676);
+  height: 100%;
+  width: 0;
+  transition: width 1s ease-in-out;
+}
+
+/* Tech Stack */
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 1.5rem;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  text-align: center;
+}
+
+.tech-item i {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.tech-item p {
+  margin: 0;
+  font-size: 1rem;
+  color: #00ff88;
+}
+
+/* Projects */
+.project-card {
+  background: #1a1a1a;
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 8px;
+  max-width: 600px;
+  transition: transform 0.3s ease;
+  border: 1px solid #00ff88;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+}
+
+.project-card a {
+  color: #00ff88;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+/* Learning Section */
+.learning-list {
+  list-style: ✅;
+  text-align: left;
+  max-width: 600px;
+  margin: auto;
+  font-size: 1.1rem;
+  color: #00ff88;
+}
+
+.learning-list li::marker {
+  color: #00ff88;
+}
+
+/* Resume */
+.resume-frame {
+  width: 90%;
+  height: 500px;
+  border: 2px solid #00ff88;
+  margin: 1rem auto;
+  border-radius: 8px;
+}
+
+/* Contact Section */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.social-links a {
+  color: #00ff88;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: color 0.3s, border 0.3s;
+}
+
+.social-links a:hover {
+  border-bottom: 2px solid #00ff88;
+}
+
+/* Footer */
+footer {
+  background: #0d1117;
+  color: #00ff88;
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid #00ff88;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .about-image {
+    width: 90%;
+  }
+
+  .project-card {
+    width: 90%;
+  }
+
+  .resume-frame {
+    height: 400px;
+  }
+}
+/* Tech Stack */
+.tech-item a {
+  color: #00ff88;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tech-item a:hover {
+  transform: scale(1.05);
+}
+
+.tech-item i {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.tech-item p {
+  margin: 0;
+  font-size: 1rem;
+  color: #00ff88;
+}
+
+.certificates-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 1rem;
+}
+
+.certificate-card {
+  width: 250px;
+  background-color: #1a1a1a;
+  border: 1px solid #00ff88;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.certificate-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.certificate-card p {
+  color: #00ff88;
+  font-size: 1rem;
+}
