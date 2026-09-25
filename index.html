@@ -2,175 +2,77 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Chetan's Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.15.1/devicon.min.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Chetan Shinde is a fullstack web developer creating thoughtful, responsive digital experiences." />
+  <title>Chetan Shinde | Fullstack Web Developer</title>
+  <link rel="preconnect" href="https://db.onlinewebfonts.com" />
+  <link href="https://db.onlinewebfonts.com/c/5ac3fe7c6abd2f62067f266d89671492?family=HelveticaNowDisplay-Medium" rel="stylesheet" />
+  <link href="https://db.onlinewebfonts.com/c/1aa3377e489837a26d019bba501e779d?family=HelveticaNowDisplayW01-Rg" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
 
-  <header>
-    <h1>Welcome to My Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#techstack">Tech Stack</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#learning">Learning</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="Chetan Shinde home">CS<span>/</span></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#about">About</a><span>/</span><a href="#work">Work</a><span>/</span><a href="#experience">Experience</a><span>/</span><a href="#contact">Contact</a>
     </nav>
+    <a class="header-cta" href="mailto:cshinde000@gmail.com">Let's talk <span>↗</span></a>
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </header>
 
-  <section id="home" data-aos="fade-up">
-    <h2>Hello! I'm Chetan</h2>
-    <p class="typewriter"></p>
-    <img src="images/hello.webp" alt="Hello" class="about-image"/>
-    <div>
-      <a href="#projects" class="btn">See My Work</a>
-      <a href="#contact" class="btn btn-secondary">Hire Me</a>
-    </div>
-  </section>
-
-  <section id="about" data-aos="fade-up">
-    <h2>About Me</h2>
-    <p>
-      I'm Chetan Shinde, a 21-year-old BBA-CA student from Pune, currently building my future as a Fullstack Web Developer. I enjoy turning ideas into reality through clean, responsive code. Whether it's building frontends with React or working on backend logic, I’m always eager to learn and grow. Let's create something amazing together!
-    </p>
-  </section>
-
-  <section id="skills" data-aos="fade-right">
-    <h2>Tech I use !</h2>
-    <div class="skills"><p>HTML</p><div class="progress-bar"><div class="progress" data-width="90%"></div></div></div>
-    <div class="skills"><p>CSS</p><div class="progress-bar"><div class="progress" data-width="75%"></div></div></div>
-    <div class="skills"><p>JavaScript</p><div class="progress-bar"><div class="progress" data-width="65%"></div></div></div>
-    <div class="skills"><p>React.js</p><div class="progress-bar"><div class="progress" data-width="50%"></div></div></div>
-  </section>
-
-  <section id="techstack" data-aos="fade-up">
-  <h2>Skills</h2>
-  <div class="tech-grid">
-    <div class="tech-item">
-      <i class="devicon-html5-plain colored"></i>
-      <p>HTML5</p>
-    </div>
-    <div class="tech-item">
-      <i class="devicon-css3-plain colored"></i>
-      <p>CSS3</p>
-    </div>
-    <div class="tech-item">
-      <i class="devicon-javascript-plain colored"></i>
-      <p>JavaScript</p>
-    </div>
-    <div class="tech-item">
-      <i class="devicon-react-original colored"></i>
-      <p>React.js</p>
-    </div>
-    <div class="tech-item">
-      <i class="devicon-python-plain colored"></i>
-      <p>Python</p>
-    </div>
-    <div class="tech-item">
-      <i class="devicon-django-plain colored"></i>
-      <p>Django</p>
-    </div>
-    <div class="tech-item">
-      <i class="devicon-mysql-plain colored"></i>
-      <p>MySQL</p>
-    </div>
-    <div class="tech-item">
-      <i class="devicon-git-plain colored"></i>
-      <p>Git</p>
-    </div>
+  <div class="mobile-menu" aria-hidden="true">
+    <a href="#about">About</a><a href="#work">Work</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+    <a href="mailto:cshinde000@gmail.com">Let's talk <span>↗</span></a>
   </div>
-</section>
 
-  <section id="projects" data-aos="fade-left">
-    <h2>Projects</h2>
-    <div class="project-card">
-      <h3>💪 BMI Calculator</h3>
-      <p>A responsive BMI calculator built using HTML, CSS, and JavaScript.</p>
-      <a href="https://bmi-calculator-sage-tau.vercel.app/" target="_blank">Live Demo</a>
-    </div>
-    <div class="project-card">
-      <h3>🌍 Explore Map</h3>
-      <p>Map app built with Leaflet.js to explore geographic data.</p>
-      <a href="https://explore-profiles-map.vercel.app/" target="_blank">Live Demo</a>
-    </div>
-    <div class="project-card"> 
-      <h3>✊🖐✌️ Rock Paper Scissors Game</h3>
-      <p>A fun and responsive Rock-Paper-Scissors game built with React.js (Hooks), HTML5, and CSS3 using Flexbox layout.</p>
-      <a href="https://rock-paper-scissors-eight-neon.vercel.app/" target="_blank">Live Demo</a>
-    </div>    
-    <div class="project-card">
-      <h3>📄 Landing Page</h3>
-      <p>A stylish, responsive landing page layout.</p>
-      <a href="https://chetan64-bit.github.io/landing-page/" target="_blank">Live Demo</a>
-    </div>
-  </section>
+  <main>
+    <section class="hero section-pad" id="home">
+      <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+      <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow"><span class="status-dot"></span> Available for meaningful work <span class="eyebrow-line"></span> 2025—26</p>
+        <h1>I build digital<br /><em>experiences</em> that<br />feel <span>alive.</span></h1>
+        <p class="hero-copy">Fullstack web developer from Pune, India. I turn thoughtful ideas into fast, expressive and useful products.</p>
+        <div class="hero-actions"><a class="button button-light" href="#work">Explore my work <span>↓</span></a><a class="text-link" href="#about">More about me <span>↗</span></a></div>
+      </div>
+      <div class="hero-side-note">SCROLL TO DISCOVER <span>↓</span></div>
+      <div class="hero-index">01 <span>/</span> 04</div>
+    </section>
 
-  <section id="certificates" data-aos="fade-up">
-  <h2>Certificates</h2>
-  <div class="certificates-grid">
-    <div class="certificate-card">
-      <img src="images/advanced webdesigning.jpg" alt="Advanced webdesigning" />
-      <p>Advanced Webdesigning - IT Vedant</p>
-    </div>
-    <div class="certificate-card">
-      <img src="images/IBM.jpeg" alt="IBM Certificate" />
-      <p>IBM Certificate - IT Vedant</p>
-    </div>
-    <div class="certificate-card">
-      <img src="images/pythondjangoframework_179_1732347390.jpg" alt="python django framework" />
-      <p>Python django framework - IT Vedant</p>
-    </div>
-    <div class="certificate-card">
-      <img src="images/programming foundation sql.jpg" alt="Programming foundation sql" />
-      <p>Programming foundation sql - IT Vedant</p>
-    </div>
-    <div class="certificate-card">
-      <img src="images/SQL Professional Advanced SQL & Mongo DB.jpg" alt="SQL Professional Advanced SQL & Mongo DB" />
-      <p>SQL Professional Advanced SQL & Mongo DB - IT Vedant</p>
-    </div>
-  </div>
-</section>
-  <section id="learning" data-aos="fade-up">
-    <h2>What I'm Currently Learning</h2>
-    <ul class="learning-list">
-      <li>Advanced React.js & State Management</li>
-      <li>Backend with Node.js + Express</li>
-      <li>Building real-world projects on GitHub</li>
-      <li>Practicing coding challenges on LeetCode</li>
-    </ul>
-  </section>
+    <section class="intro section-pad reveal" id="about">
+      <p class="section-label">(01) The person behind the pixels</p>
+      <div class="intro-grid"><h2>Curious by nature.<br /><span>Precise by craft.</span></h2><div class="intro-body"><p>I'm Chetan Shinde, a fullstack web developer with 3 months of real-world experience and a deep interest in how the web can make everyday things feel simpler.</p><p>I work across the interface and the logic behind it, combining clean frontend development with practical backend thinking. Every project is a chance to learn, refine and make something people enjoy using.</p></div></div>
+    </section>
 
-  <section id="resume" data-aos="fade-up">
-    <h2>Resume</h2>
-    <iframe src="CHETAN SHINDE.pdf" class="resume-frame"></iframe>
-    <a href="CHETAN SHINDE.pdf" download class="btn">Download Resume</a>
-  </section>
+    <section class="experience section-pad reveal" id="experience"><div class="section-heading"><p class="section-label">(02) Experience in progress</p><h2>Small steps.<br /><em>Real momentum.</em></h2></div><div class="timeline"><div class="timeline-item"><span>2025 — Present</span><div><h3>Fullstack Web Developer</h3><p>Building responsive web experiences across frontend interfaces, API-powered features and practical backend workflows.</p></div><strong>01</strong></div><div class="timeline-item"><span>Current focus</span><div><h3>Learning by shipping</h3><p>Deepening React, backend development, database design and the product thinking that turns features into useful experiences.</p></div><strong>02</strong></div></div></section>
 
-  <section id="contact" data-aos="fade-up">
-    <h2>Contact Me</h2>
-    <p>Connect with me or send me an email:</p>
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/chetan-shinde-6785362a2" target="_blank">LinkedIn</a>
-      <a href="https://www.instagram.com/chetan__3789" target="_blank">Instagram</a>
-      <a href="mailto:cshinde000@gmail.com">Email</a>
-      <a href="https://github.com/Chetan64-bit" target="_blank">GitHub</a>
-    </div>
-  </section>
+    <section class="work section-pad" id="work">
+      <div class="section-heading reveal"><p class="section-label">(02) Selected experiments</p><h2>Things I have<br /><em>made so far.</em></h2><p class="section-description">A growing collection of practical builds, playful experiments and lessons turned into interfaces.</p></div>
+      <div class="project-grid">
+        <article class="project-card project-feature reveal"><div class="project-visual"><img class="project-wallpaper" src="images/project-bmi.svg" alt="Abstract BMI calculator wallpaper" /><span class="visual-number">01</span><span class="visual-caption">health / utility</span></div><div class="project-meta"><span>01 / 08</span><span>HTML · CSS · JavaScript</span></div><h3>BMI Calculator</h3><p>A focused health utility that turns height and weight into a clear, readable result. Built with responsive layouts and lightweight client-side logic.</p><button class="case-study-trigger" type="button">View case study <span>↗</span></button></article>
+        <article class="project-card reveal"><div class="project-visual"><img class="project-wallpaper" src="images/project-map.svg" alt="Abstract map exploration wallpaper" /><span class="visual-number">02</span><span class="visual-caption">explore / data</span></div><div class="project-meta"><span>02 / 08</span><span>Leaflet.js · JavaScript</span></div><h3>Explore Map</h3><p>An interactive map experience for discovering geographic data, with a visual language that keeps exploration at the centre.</p><button class="case-study-trigger" type="button">View case study <span>↗</span></button></article>
+        <article class="project-card reveal"><div class="project-visual"><img class="project-wallpaper" src="images/project-game.svg" alt="Abstract rock paper scissors wallpaper" /><span class="visual-number">03</span><span class="visual-caption">play / react</span></div><div class="project-meta"><span>03 / 08</span><span>React · Hooks · CSS</span></div><h3>Rock Paper Scissors</h3><p>A playful React game built around instant feedback, simple state management and a responsive layout that stays fun on every screen.</p><button class="case-study-trigger" type="button">View case study <span>↗</span></button></article>
+        <article class="project-card reveal"><div class="project-visual"><img class="project-wallpaper" src="images/project-landing.svg" alt="Abstract editorial landing page wallpaper" /><span class="visual-number">04</span><span class="visual-caption">brand / interface</span></div><div class="project-meta"><span>04 / 08</span><span>HTML · CSS · Design</span></div><h3>Editorial Landing Page</h3><p>A visual landing page study exploring hierarchy, rhythm and the small details that make a first impression stay with you.</p><button class="case-study-trigger" type="button">View case study <span>↗</span></button></article>
+        <article class="project-card reveal"><div class="project-visual"><img class="project-wallpaper" src="images/project-sgms.svg" alt="Abstract SGMS management dashboard wallpaper" /><span class="visual-number">05</span><span class="visual-caption">system / management</span></div><div class="project-meta"><span>05 / 08</span><span>Web application · SGMS</span></div><h3>SGMS</h3><p>A management-system project shaped around organized information, repeatable workflows and a clear interface for everyday operations.</p><button class="case-study-trigger" type="button">View case study <span>↗</span></button></article>
+        <article class="project-card reveal"><div class="project-visual"><img class="project-wallpaper" src="images/project-tracker.svg" alt="Abstract tracker progress wallpaper" /><span class="visual-number">06</span><span class="visual-caption">progress / workflow</span></div><div class="project-meta"><span>06 / 08</span><span>Web application · Tracker</span></div><h3>Tracker</h3><p>A focused tracking experience for keeping progress visible, turning updates into a simple path from the current state to the next milestone.</p><button class="case-study-trigger" type="button">View case study <span>↗</span></button></article>
+        <article class="project-card reveal"><div class="project-visual"><img class="project-wallpaper" src="images/project-nursery.svg" alt="Abstract JPS Nursery website wallpaper" /><span class="visual-number">07</span><span class="visual-caption">education / web</span></div><div class="project-meta"><span>07 / 08</span><span>HTML · CSS · JavaScript</span></div><h3>JPS Nursery</h3><p>A warm, content-first web experience for presenting a nursery, its learning environment and the people it welcomes.</p><button class="case-study-trigger" type="button">View case study <span>↗</span></button></article>
+        <article class="project-card reveal"><div class="project-visual"><img class="project-wallpaper" src="images/project-muscle.svg" alt="Abstract muscle training website wallpaper" /><span class="visual-number">08</span><span class="visual-caption">fitness / API</span></div><div class="project-meta"><span>08 / 08</span><span>HTML · CSS · JavaScript · API</span></div><h3>Muscle Training Website</h3><p>A fitness information site where users search for a muscle and receive training guidance through an API-powered experience.</p><button class="case-study-trigger" type="button">View case study <span>↗</span></button></article>
+      </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Chetan</p>
-  </footer>
+    <section class="services section-pad reveal" id="services"><div class="section-heading"><p class="section-label">(04) What I can build</p><h2>Useful work,<br /><em>beautifully made.</em></h2></div><div class="service-grid"><article><span>01</span><h3>Responsive websites</h3><p>Fast, considered interfaces that look sharp and work naturally across every screen.</p></article><article><span>02</span><h3>React interfaces</h3><p>Interactive product surfaces with clear state, thoughtful motion and reusable components.</p></article><article><span>03</span><h3>Fullstack features</h3><p>Practical forms, APIs, dashboards and data flows that make a frontend genuinely useful.</p></article></div></section>
 
-  <script src="view.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <section class="toolkit section-pad reveal" id="skills"><div class="section-heading"><p class="section-label">(05) My toolkit</p><h2>Good work needs<br /><em>good tools.</em></h2></div><div class="tool-list"><div><span>01</span><strong>Frontend</strong><p>HTML5 / CSS3 / JavaScript / React.js</p></div><div><span>02</span><strong>Backend</strong><p>Python / Django / Node.js / REST APIs</p></div><div><span>03</span><strong>Data & workflow</strong><p>MySQL / MongoDB / Git / Figma</p></div></div></section>
+
+    <section class="proof section-pad reveal" id="proof"><div class="proof-copy"><p class="section-label">(06) Proof of work</p><h2>Learning, documented.</h2><p>Certificates from my learning journey, plus a resume that brings the full picture together.</p><a class="button button-light" href="Chetan's Resume.pdf" download>Download resume <span>↓</span></a></div><div class="certificate-strip"><img src="images/advanced webdesigning.jpg" alt="Advanced web designing certificate" /><img src="images/IBM.jpeg" alt="IBM certificate" /><img src="images/SQL Professional Advanced SQL & Mongo DB.jpg" alt="SQL and MongoDB certificate" /></div></section>
+
+    <section class="contact section-pad reveal" id="contact"><p class="section-label">(07) Have a good idea?</p><h2>Let's make it<br /><em>real.</em></h2><div class="contact-grid"><div><a class="contact-email" href="mailto:cshinde000@gmail.com">cshinde000@gmail.com <span>↗</span></a><p class="contact-note">Tell me what you are building, what is stuck, or what you are curious about.</p></div><form class="contact-form"><label>Name<input name="name" type="text" required /></label><label>Email<input name="email" type="email" required /></label><label>Message<textarea name="message" rows="4" required></textarea></label><button class="button button-dark" type="submit">Send message <span>↗</span></button><p class="form-status" role="status"></p></form></div><div class="contact-footer"><span>Pune, India</span><span>© 2025 Chetan Shinde</span><div><a href="https://github.com/Chetan64-bit" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/chetan-shinde-6785362a2" target="_blank" rel="noreferrer">LinkedIn ↗</a></div></div></section>
+  </main>
+  <dialog class="case-study-modal"><button class="modal-close" type="button" aria-label="Close case study">×</button><p class="section-label">Project notes</p><h2 class="modal-title"></h2><p class="modal-copy"></p><div class="modal-details"><span class="modal-stack"></span><span>Built with intent</span></div></dialog>
+  <script src="script.js"></script>
 </body>
 </html>
